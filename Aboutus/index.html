@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CJM0SLEFQZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CJM0SLEFQZ');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="google-site-verification" content="U4WrpzFDmaHcuK-NfsTwmPedGPnYUGSSiPciP5e0z18" />
+  <meta name="facebook-domain-verification" content="61sleqq2sotq6rqysbiv9mide254nk" />
+  <meta name="description" content="Staarbox, your trusted Madurai fruit shop, delivers fresh fruits online Madurai, healthy snacks, and morning nutri boxes. Discover our wellness mission!">
+ <meta name="keywords" content="fresh fruits online madurai, fresh fruits box online madurai, fresh fruit salad delivery Madurai,  best food delivery in madurai, fruit shop near me, healthy snacks delivery madurai, healthy snacks items madurai, healthy food items in Madurai, morning fruit box madurai, nutritious breakfast box madurai, veg & nut delivery madurai, dry fruits shop online Madurai, madurai fruit shop">
+  <title>About Us – Staarbox: Fresh Fruits Online Madurai</title>
+<link rel="canonical" href="https://www.staarbox.in/Aboutus/" />
+
+
+  <!-- CSS & Frameworks -->
+  <link rel="stylesheet" href="../Css/index.css" />
+  <link rel="stylesheet" href="../Css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../Css/swiper.css" />
+  <link rel="stylesheet" href="../Css/fontawesome.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="../Css/googlefonts.css" />
+  <link rel="stylesheet" href="../Css/AOS.css" />
+  <link rel="stylesheet" href="../Css/Mdb.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    .about-page {
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .about-page .hero {
+      position: relative;
+      background: url('../Image/staarbox.png') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .about-page .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .about-page .hero h1, .about-page .hero p {
+      position: relative;
+      z-index: 2;
+    }
+    .about-page .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .about-page .hero p {
+      max-width: 700px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+      color: #ddd;
+    }
+
+    /* Section Wrapper */
+    .about-page section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .about-page .section h2 {
+      text-align: center;
+      color: #02614e;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .about-page .section h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #f4a261;
+      display: block;
+      margin: 0.5rem auto 1.5rem;
+    }
+    .about-page .section p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #555;
+      text-align: center;
+    }
+
+    /* Mission Cards */
+    .about-page .mission-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .about-page .mission-card {
+      background: #f8f4ef;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .about-page .mission-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .about-page .mission-card i {
+      font-size: 2rem;
+      color: #f4a261;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Team Section */
+    .about-page .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .about-page .team-member {
+      background: #f8f8f8;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .about-page .team-member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .about-page .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .about-page .team-member h4 {
+      margin-bottom: 0.3rem;
+      color: #2d3e50;
+    }
+
+    /* Features */
+    .about-page .features {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .about-page .features li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .about-page .features li::before {
+      content: "✔";
+      color: #2a9d8f;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-page">
+    <!-- ✅ NAVBAR -->
+    <header>
+      <nav class="navbar container-fluid" id="home">
+        <div class="logo">
+          <a href="#"><img src="../Image/staarbox.png" height="60" width="100" alt="StaarBox"></a>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../Terms&Conditions/" class="active">Terms&Condition</a></li>
+            <li><a href="../Contactus/">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ✅ HERO SECTION -->
+    <section class="hero" id="abt">
+      <h1>Welcome to Staarbox - Where Wellness Meets Convenience</h1>
+      <p>Blending tradition with innovation to create healthy lifestyles and inspiring spaces. Your trusted Madurai fruit shop for fresh and wholesome nutrition. Experience the best food delivery in Madurai with Staarbox.</p>
+    </section>
+
+    <!-- ✅ WHO WE ARE -->
+    <section class="section">
+      <h2>Who We Are</h2>
+      <p>Our journey began with a simple realization — in the chaos of modern life, health often takes a backseat, especially in the mornings. We envisioned a service that brings nature’s freshness directly to your doorstep while the world is still waking up. What started as a local initiative with a few fruit baskets from the best fruit shop in Madurai has grown into a daily wellness ritual for hundreds of households. Every morning, before the sun rises, our team is on the move — handpicking fruits, sorting premium nuts from a trusted dry fruit shop in Madurai, and packing your box of health with love and care. Staarbox is not just about delivering food. It’s about delivering consistency, trust, and the joy of starting your day right with reliable best food delivery in Madurai and nuts & legumes delivery Madurai.</p>
+    </section>
+
+    <!-- ✅ OUR MISSION -->
+    <section class="section">
+      <h2>Our Mission</h2>
+      <div class="mission-points">
+        <div class="mission-card">
+          <i class="fas fa-apple-alt"></i>
+          <h3>Healthier Lifestyles</h3>
+          <p>We aim to inspire healthy living by delivering fresh, natural, and high-quality fruits and nuts every morning — reliably and affordably. Whether you are searching for healthy food items in Madurai, best healthy snacks in Madurai, or nutritious options, we have you covered with our healthy snacks items in Madurai.</p>
+        </div>
+        <div class="mission-card">
+          <i class="fas fa-seedling"></i>
+          <h3>Freshness & Nutrition</h3>
+          <p>Our protein-packed nuts and fiber-rich fruits give your body the nutrients it craves, without disrupting your schedule. Enjoy the convenience of ordering fresh fruits online Madurai and savor the goodness of nature from the top fruit shop in Madurai. Discover fresh fruits online Madurai for daily wellness.</p>
+        </div>
+        <div class="mission-card">
+          <i class="fas fa-handshake"></i>
+          <h3>Sustainable Connections</h3>
+          <p>We bridge the gap between local farmers and modern families, promoting sustainability and delivering unprocessed goodness every day. From your fruit shop near me to your doorstep, freshness is guaranteed with our Madurai fruit shop..</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ TEAM -->
+    <section class="section">
+      <h2>Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <h4>Kiran Sidharth</h4>
+          <p>Founder</p>
+        </div>
+        <div class="team-member">
+          <h4>Bercia Dawins</h4>
+          <p>Co-Founder</p>
+        </div>
+        <div class="team-member">
+          <h4>Danny Shelcia</h4>
+          <p>Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ WHAT MAKES US DIFFERENT -->
+    <section class="section">
+      <h2>What Makes Us Different</h2>
+      <ul class="features">
+      <li>We deliver nature’s freshness to your doorstep every morning, including fresh fruit salad in Madurai and healthy snacks items in Madurai.</li>
+    <li>Started as a small initiative, now a trusted wellness ritual for many households, powered by the best fruit shop in Madurai.</li>
+    <li>Handpicked fruits and premium nuts packed with care before sunrise from the finest fruit shop in Madurai and dry fruit shop in Madurai.</li>
+    <li>We stand for consistency, trust, and the joy of starting your day right with the best healthy snacks items in Madurai.</li>
+      </ul>
+    </section>
+
+    <!-- ✅ WHY CHOOSE US -->
+    <section class="section">
+      <h2>Why Choose Us?</h2>
+      <ul class="features">
+     <li>Your health is personal — and your mornings should be powerful with the best healthy food items in Madurai from Staarbox.</li>
+    <li>Supports pregnancy, menstrual health, and diabetes management with carefully selected fruits and nuts from our dry fruit shop in Madurai.</li>
+    <li>Delivers nutrient-rich fruits and nuts for daily wellness needs through trusted best food delivery in Madurai and nuts & legumes delivery Madurai.</li>
+    <li>Powers your workouts and lifestyle — one sunrise at a time, with fresh produce from your local Madurai fruit shop and fruit shop near me.</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- ✅ FOOTER (OUTSIDE about-page DIV SO IT'S UNAFFECTED) -->
+  <footer class="text-center text-lg-start footer">
+    <!-- Place your full footer code here (same as index page) -->
+<!-- Footer -->
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/share/1ZoZwz2v2S/" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+       <a href="https://www.instagram.com/staarbox.in?igsh=MWx4dGlhMnBtbnEzaw==" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <div class="logo">
+    <a href="#"><img src="../Image/staarbox.png" height="100" width="140" alt="StaarBox"></a>
+  </div>
+          </h6>
+          <p>
+            Welcome to staarbox - where wellness isn’t a trend, it’s a lifestyle. Start your day with nature’s finest fruits and nuts, delivered fresh to your doorstep, right on time
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Explore
+          </h6>
+          <p>
+            <a href="../" class="text-reset">HOME</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+         Links
+          </h6>
+          <p>
+            <a href="../Aboutus/" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="../Terms&Conditions/" class="text-reset">Terms & Conditions</a>
+          </p>
+          <p>
+            <a href="../Contactus/" class="text-reset">Contact Us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+         <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+         <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:service@staarbox.in"style="color: inherit; text-decoration: none;">service@staarbox.in</a></p>
+          <p><i class="fas fa-phone"></i> <a href="tel:0452-4035878"style="color: inherit; text-decoration: none;">0452-4035878</a>,<a href="tel:+91 6374341751"style="color: inherit; text-decoration: none;">+91 6374341751</a></p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/+916374341751" target="_blank"style="color: inherit; text-decoration: none;">+91 6374341751</a></p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 Copyright:
+    <a class="text-reset fw-bold" href="https://staarbox.in">STAARBOX</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <!-- ✅ SCRIPTS -->
+  <script src="../JS/bootstrap.bundle.js"></script>
+  <script src="../JS/Mdb.js"></script>
+  <script src="../JS/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const links = document.getElementById("navLinks");
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
