@@ -874,7 +874,7 @@
       const token = localStorage.getItem("accessToken");
 
       try {
-        const url = `http://31.97.230.54:8080/api/checkPinCodeAvailability?pincode=${encodeURIComponent(pin)}`;
+        const url = `https://api.starrbox.in/api/checkPinCodeAvailability?pincode=${encodeURIComponent(pin)}`;
         const response = await fetch(url, {
           method: "GET",
           headers: { "Authorization": token ? `Bearer ${token}` : "" }
@@ -1195,4 +1195,5 @@
 </body>
 
 </html>
+
 
