@@ -388,7 +388,7 @@ body {
   .easter-egg-gif-5,
   .easter-egg-gif-6,
   .easter-egg-gif-7,
-  .easter-egg-gif-8 {
+  .easter-egg-gif-8{
     height: 20vw;
     width: 20vw;
   }
@@ -726,29 +726,23 @@ body {
   position: relative;
   overflow: visible;
 }
+.category-card {
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+.category-card:active {
+  transform: scale(0.97);
+}
 
 .menu-egg {
-  position: absolute;
-  opacity: 0.22;
   pointer-events: none;
-  z-index: 1;
-  transition: transform 0.4s ease, opacity 0.4s ease;
-}
-
-.menu-egg:hover {
-  transform: scale(1.12) rotate(4deg);
-  opacity: 0.35;
-}
-
-.menu-egg.egg-1 {
-  left: -6%;
-  width: 16vw;
-}
-
-.menu-egg.egg-2 {
-  bottom: 12%;
-  right: 10%;
-  width: 14vw;
+  z-index: 10;
 }
 
 /* Keep content above eggs */
@@ -773,6 +767,7 @@ body {
   width: 90%;
   max-width: 320px;
 }
+
 
 
 /* ================================ */
@@ -1416,4 +1411,3 @@ footer {
 html {
   scroll-behavior: smooth;
 }
-
